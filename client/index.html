@@ -4,11 +4,33 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script type="module" src="../client/index.js"></script>
+    <link rel="stylesheet" href="./output.css" />
     <title>MotoWeather</title>
   </head>
   <body>
-    <div id="app">
-      <div id="weatherData">Data:</div>
+    <div id="wrapper">
+      <div id="app">
+        <h1>MotoWeather</h1>
+        <div id="container">
+          <h3 id="city"></h3>
+          <div id="last-updated"></div>
+          <div id="stats">
+            <div class="card">
+              <div id="temperature"></div>
+            </div>
+            <div class="card">
+              <div id="humidity"></div>
+            </div>
+            <div class="card">
+              <div id="precipitation"></div>
+            </div>
+            <div class="card">
+              <div id="wind"></div>
+            </div>
+          </div>
+          <div id="ideal-condition"></div>
+        </div>
+      </div>
     </div>
   </body>
 </html>
