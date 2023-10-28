@@ -14,7 +14,8 @@ app.get('/weatherData', async function (req, res) {
         params: { q: req.query.q },
         headers: {
             'X-RapidAPI-Key': 'b38b021d35mshe296b254043832cp12b968jsn55db3950b3e9',
-            'X-RapidAPI-Host': 'weatherapi-com.p.rapidapi.com'
+            'X-RapidAPI-Host': 'weatherapi-com.p.rapidapi.com',
+            'Access-Control-Allow-Origin': '*'
         }
     }
     try {

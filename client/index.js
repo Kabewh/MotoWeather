@@ -23,6 +23,7 @@ if (navigator.geolocation) {
             method: 'GET',
             url: weatherDataURL,
             params: { q: `${position.coords.latitude},${position.coords.longitude}` },
+            'Access-Control-Allow-Origin': '*'
         }
         try {
             const response = await axios.request(options)
