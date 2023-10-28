@@ -1,11 +1,15 @@
 import axios from 'axios'
 import http from 'http'
 import express from 'express'
+import cors from 'cors'
 const URL = 'https://weatherapi-com.p.rapidapi.com/current.json'
 
 const hostname = '127.0.0.1';
 const port = 3000;
+
 const app = express()
+
+app.use(cors())
 
 app.get('/weatherData', async function (req, res) {
     const options = {
