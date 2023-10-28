@@ -1,0 +1,88 @@
+$gray: #333333;
+$softBlue: #c5d9e5;
+$softGreen: #b5d3b8;
+$terraCotta: #d9765a;
+
+*{
+    box-sizing: border-box;
+    padding:0;
+    margin: 0;
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+#wrapper {
+   background: #ffffff4c;
+   height: 100vh;
+}
+
+#app {
+    margin: 0 auto;
+    width: 60vw;
+    height: 100%;
+    background-color: #242424;
+    h1 {
+        font-size: 5rem;
+        text-align: center;
+        padding-top: 4rem;
+    }
+}
+
+#container {
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    #city {
+        font-size: 4rem;
+        margin-top: 3rem;
+    }
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background: #ededed;
+    width: 300px;
+    height: 300px;
+    border: solid 1px black;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    border-radius: 10px;
+    #temperature {
+        color: #333;
+        margin-top: 2rem;
+    }
+    #humidity {
+        color: #333;
+        margin-top: 2rem;
+    }
+    #precipitation {
+        color: #333;
+        margin-top: 2rem;
+    }
+    #wind {
+        color: #333;
+        margin-top: 2rem;
+    }
+}
+
+#stats {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 4rem;
+    font-size: 2rem;
+}
+
+#ideal-condition {
+    margin-top: 3rem;
+    font-size: 2rem;
+}
+
+#last-updated {
+    font-size: 1.5rem;
+}

@@ -20,6 +20,7 @@ app.get('/weatherData', async function (req, res) {
     try {
         const response = await axios.request(options)
         res.json(response.data)
+        console.log(response.data)
     } catch (error) {
         console.error(error)
     }
